@@ -1,7 +1,8 @@
 import React from 'react';
 import './card.css';
 
-const Card = ({name, email, username, id}) => {
+const Card = ({user}) => {
+    const {id, name, username,email}=user
     return (
         <div className="bg-white-10 dib br4 ma2 pa2 grow bw2">
             <img className="w4-5" alt="toRemove"
