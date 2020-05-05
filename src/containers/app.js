@@ -9,7 +9,7 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            devices: [],
+            users: [],
             searchfield: '',
         }
     }
@@ -17,7 +17,7 @@ class App extends Component {
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
-            .then(user => this.setState({ devices: user }));
+            .then(user => this.setState({ users: user }));
     }
 
     onSearch = (event) => {
@@ -25,10 +25,10 @@ class App extends Component {
     }
 
     render() {
-        const filterdDevices = this.state.devices.filter(devices => {
-            return devices.name.toLowerCase()
+        const filterdUsers = this.state.users.filter(user => {
+            return user.name.toLowerCase()
                 .includes(this.state.searchfield.toLowerCase()) ||
-                devices.username.toLowerCase()
+                user.username.toLowerCase()
                     .includes(this.state.searchfield.toLowerCase());
         })
         return (
@@ -36,7 +36,7 @@ class App extends Component {
                 <h1 className="tc white tracked-mega pa1 ma3">THEY DONT EXIST</h1>
                 <SearchBox search={this.onSearch} />
                 <Scroll>
-                <CardList devices={filterdDevices} />
+                <CardList users={filterdUsers} />
                 </Scroll>
             </div>
         );

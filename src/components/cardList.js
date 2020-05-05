@@ -1,17 +1,17 @@
 import React from 'react';
 import Card from './card';
 
-const CardList = ({ devices }) => {
+const CardList = ({ users }) => {
     return (
         <div className="tc">
-            {devices.map((user, i) => {
+            {users.map((user, i) => {
                 return (
                     <Card
-                        key={devices[i].id}
-                        id={devices[i].id}
-                        name={devices[i].name}
-                        username={devices[i].username}
-                        email={devices[i].email}
+                        key={users[i].id}
+                        id={users[i].id}
+                        name={users[i].name}
+                        username={users[i].username}
+                        email={users[i].email}
                     />
                 )
             })}
