@@ -22,7 +22,7 @@ export const devices = [
   },
   {
     id: 4,
-    name: 'Samsung Galaxy S20 Ultra',
+    name: 'Galaxy S20 Ultra',
     manu: 'Samsung',
     price: '1399$',
     image: 'https://cdn.shopify.com/s/files/1/1684/4603/products/Samsung-s20-ultra_Cosmic-Gray_1200x1200.png'
