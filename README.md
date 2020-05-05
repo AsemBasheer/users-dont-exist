@@ -1,5 +1,6 @@
 This is my first React app.
-Soon the robohash.org generated image will be removed, it should display a different 'non-existing person' photo for each card, using http://thispersondoesnotexist.com/ .
+
+Soon the robohash.org generated images will be removed, it should display a different 'non-existing person' photo for each card, using http://thispersondoesnotexist.com/ .
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
